@@ -1,0 +1,12 @@
+# Collaborative Editing
+- Approaches
+  - Operational Transformation (OT)
+  - Conflict-free Replicated Data Types (CRDTs)
+  - Differential synchronization
+- Research
+  - [How to make a real-time collaborative text  editor in 5 easy steps! // Rudi Chen](https://www.youtube.com/watch?v=jIR0Ngov7vo)
+  - [A simple approach to building a real-time collaborative text editor](https://digitalfreepen.com/2017/10/06/simple-real-time-collaborative-text-editor.html)
+  - [Creating collaborative editing UIs in React. Espen Hovlandsdal. JS Fest 2019 Spring](https://www.youtube.com/watch?v=6_kPx_-vgis)
+  - [GOTO 2016 • Conflict Resolution for Eventual Consistency • Martin Kleppmann](https://www.youtube.com/watch?v=yCcWpzY8dIA)
+- Implementations
+  - [automerge](https://github.com/automerge/automerge)
