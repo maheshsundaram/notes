@@ -22,3 +22,13 @@ FILE=$(fzf); git log --pretty=format:%H -- $FILE | fzf --ansi --preview "git sho
 ```bash
 git show $commit --name-only
 ```
+
+# remove untracked files
+
+```bash
+git clean -fdx
+```
+
+`-f` - force
+`-d` - include directories
+`-x` - remove ignored files
