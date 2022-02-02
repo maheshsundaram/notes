@@ -1,27 +1,4 @@
-# Shell Scripting
-
-## Write iso to usb with dd
-
-Find the drive:
-
-```bash
-sudo fdisk -l
-```
-
-Now write to the drive:
-
-```bash
-sudo dd bs=4M if=/path/to/the.iso of=/dev/sd[drive letter] status=progress oflag=sync
-```
-
-## Copy to clipboard in Linux
-
-Source: [https://stackoverflow.com/a/5130969](https://stackoverflow.com/a/5130969)
-
-```bash
-cat file | xclip -selection clipboard
-```
-
+# Bash / Shell
 
 ## Get just the filename
 
@@ -46,3 +23,20 @@ echo "Using bash $BASH_VERSION"
 ```
 
 Inspect the path and use the first encountered bash executable as the interpreter for the script. Good when the user has overridden the default version. E.g. I updated bash when I got a new MacBook.
+
+## Move files
+
+``bash
+for file in *; do git mv "$file" "${file%.js}.ts"; done;
+```
+
+https://stackoverflow.com/a/1225236
+
+## Loop
+
+```bash
+for i in "${arrayName[@]}"
+do
+   echo $i
+done
+```

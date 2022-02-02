@@ -1,0 +1,3 @@
+# Follow redirects
+
+`curl -L ...`
