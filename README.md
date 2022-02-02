@@ -1,10 +1,7 @@
 # Notes
 
-🧠 Here I share what I've learned, think is cool or just worth sharing with colleagues and anyone else who finds it useful.
+This repo is to save me a trip to DuckDuckGo, StackOverflow or GitHub. It also has some more polished long form work that was meant for sharing with colleagues, such as:
 
-🚧 If you spot anything that needs correction or just want to say thanks, feel free to open an issue or PR, or send me a message at mahesh at omkara dot dev
-
-- [Shell Scripting](shell-scripting.md) (October 2020)
 - [Exhaustive Reducers in Typescript (React)](exhaustive-reducer.md) (October 2020)
 - [Approaches to Collaborative Editing](collaborative-editing.md) (August 2020)
 - [Mapped Types Medley](mapped-types-medley.md) (May 2020, Updated July 2020)
