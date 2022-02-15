@@ -26,7 +26,7 @@ Inspect the path and use the first encountered bash executable as the interprete
 
 ## Move files
 
-``bash
+```bash
 for file in *; do git mv "$file" "${file%.js}.ts"; done;
 ```
 
