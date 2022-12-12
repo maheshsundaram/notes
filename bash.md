@@ -40,3 +40,17 @@ do
    echo $i
 done
 ```
+
+or 
+
+```bash
+for i in {1..10}; do echo $i; done
+```
+
+## Read file line by line
+
+```bash
+while IFS= read -r line; do
+    echo "$line"
+done < filename.txt
+```
