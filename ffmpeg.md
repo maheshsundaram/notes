@@ -11,5 +11,9 @@ where starting position follows `-ss` and duration follows `-t`
 Given a directory of m3u8 master files:
 
 ```
-for i in *.m3u8; do ffmpeg -protocol_whitelist file,http,https,tcp,tls,crypto -i $i -c copy -bsf:a aac_adtstoasc "${i%.m3u8}.mp4"; rm $i; done;
+for i in *.m3u8
+do
+  ffmpeg -protocol_whitelist file,http,https,tcp,tls,crypto -i $i -c copy -bsf:a aac_adtstoasc "${i%.m3u8}.mp4";
+  rm $i;
+done
 ```
