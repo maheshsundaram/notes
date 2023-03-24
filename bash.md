@@ -54,3 +54,9 @@ while IFS= read -r line; do
     echo "$line"
 done < filename.txt
 ```
+
+## Datetime
+
+```bash
+echo "$(date '+%Y-%m-%dT%H:%M:%S')"
+```
