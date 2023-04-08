@@ -20,9 +20,9 @@ Use the [easy align plugin](https://github.com/junegunn/vim-easy-align), highlig
 
 # Macro over visual selection
 
-Macro over visual selection for macro recorded in e.g. `q` register
+Macro over visual selection for macro recorded in e.g. `w` register
 
-```:'<,'>normal @q```
+```:'<,'>normal @w```
 
 # Check variable
 
