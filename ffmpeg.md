@@ -29,4 +29,3 @@ ffmpeg -i file.mp4 -c:v mpeg2video -q:v 5 -c:a mp2 -f vob file.mpg
 Sources:
 - https://stackoverflow.com/a/60443156
 - https://stackoverflow.com/a/46496070
-- 
