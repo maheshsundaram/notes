@@ -29,3 +29,13 @@ ffmpeg -i file.mp4 -c:v mpeg2video -q:v 5 -c:a mp2 -f vob file.mpg
 Sources:
 - https://stackoverflow.com/a/60443156
 - https://stackoverflow.com/a/46496070
+
+## webm -> mp3
+
+```
+for FILE in *.webm; do
+    ffmpeg -i "${FILE}" -vn -ab 128k -ar 44100 -y "${FILE%.webm}.mp3";
+done
+```
+
+https://bytefreaks.net/gnulinux/bash/ffmpeg-extract-audio-from-webm-to-mp3
