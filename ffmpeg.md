@@ -1,10 +1,13 @@
 # cut
 
 ```
-ffmpeg -i input -ss hh:mm:ss -t hh:mm:ss -c:v copy -c:a copy output
+ffmpeg -ss hh:mm:ss -to hh:mm:ss -i input.mp4 -c copy output.mp4
 ```
 
 where starting position follows `-ss` and duration follows `-t`
+
+Sources:
+- https://stackoverflow.com/a/42827058
 
 # download m3u8 streams
 
@@ -17,6 +20,21 @@ do
   rm $i;
 done
 ```
+
+# concat
+
+```
+$ cat list.txt
+file 'path1.mp4'
+file 'path2.mp4'
+file 'path3.mp4'
+
+$ ffmpeg -f concat -safe 0 -i list.txt -c copy output.mp4
+```
+
+Sources:
+- https://stackoverflow.com/a/11175851
+
 # conversion
 
 ## webm -> mp4 -> mp2
@@ -38,4 +56,5 @@ for FILE in *.webm; do
 done
 ```
 
-https://bytefreaks.net/gnulinux/bash/ffmpeg-extract-audio-from-webm-to-mp3
+Sources:
+- https://bytefreaks.net/gnulinux/bash/ffmpeg-extract-audio-from-webm-to-mp3
